@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DLGIN</title>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <div class="bg-dark text-white" style="padding: 5px 0px">
+        <h1>DLGIN: Deep Learning Genre Identification Network</h1>
+    </div>
+
+    <div class="navbar text-white" id="sidebar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href='/dlgin/'>Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/dlgin/about'>About DLGIN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/dlgin/contact'>Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

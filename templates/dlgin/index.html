@@ -1,0 +1,38 @@
+{% extends 'dlgin/header.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <form enctype="multipart/form-data" method="POST">
+                {% csrf_token %}
+                {{ upload_formset.management_form }}
+                {% for form in upload_formset %}
+                    <div class="upload_form">
+                        {% if form.instance.pk %}
+                            {{ form.DELETE }}
+                        {% endif %}
+                        {{ form.as_p }}
+                    </div>
+                {% endfor %}
+                <br />
+                <button type="submit">Run</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class='container-fluid'>
+                <canvas id="visualization" width="600" height="400" style="border:1px solid #000000;" />
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+    <script src="{% static 'dynamic_formsets/jquery.formset.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.upload_form').formset({
+            addText: 'add song',
+            deleteText: 'remove'
+        });
+    </script>
+{% endblock %}
