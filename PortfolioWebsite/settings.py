@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dlgin.apps.DlginConfig',
-    'bootstrap3',
     'bootstrap4',
     'librosa',
     'numpy',

@@ -4,10 +4,31 @@
     <list default="true" id="e2867ced-831b-4522-8cbf-b04ba39808a0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/PortfolioWebsite/settings.py" afterPath="$PROJECT_DIR$/PortfolioWebsite/settings.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/dlgin/views.py" afterPath="$PROJECT_DIR$/dlgin/views.py" />
-      <change beforePath="$PROJECT_DIR$/media/songs/stranger_GVaQryX.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/dlgin/index.html" afterPath="$PROJECT_DIR$/templates/dlgin/index.html" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/bootstrap.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/components.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/exceptions.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/forms.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/legacy.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/models.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/renderers.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templates/bootstrap3/bootstrap3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templates/bootstrap3/field_help_text_and_errors.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templates/bootstrap3/form_errors.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templates/bootstrap3/messages.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templates/bootstrap3/pagination.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templatetags/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/templatetags/bootstrap3.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/tests.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/text.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/bootstrap3/utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/metadata.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_bootstrap3-9.1.0.dist-info/top_level.txt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,34 +42,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dlgin/index.html">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dlgin/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            <state relative-caret-position="54">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PortfolioWebsite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dlgin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="-1013">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PortfolioWebsite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="129" column="46" lean-forward="false" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -77,8 +98,8 @@
         <option value="$PROJECT_DIR$/dlgin/forms.py" />
         <option value="$PROJECT_DIR$/dlgin/models.py" />
         <option value="$PROJECT_DIR$/templates/dlgin/index.html" />
-        <option value="$PROJECT_DIR$/PortfolioWebsite/settings.py" />
         <option value="$PROJECT_DIR$/dlgin/views.py" />
+        <option value="$PROJECT_DIR$/PortfolioWebsite/settings.py" />
       </list>
     </option>
   </component>
@@ -133,6 +154,11 @@
               <item name="dlgin" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="PortfolioWebsite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PortfolioWebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -228,7 +254,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32617587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32617587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -332,14 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dlgin/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dlgin/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -394,26 +412,34 @@
     <entry file="file://$PROJECT_DIR$/templates/dlgin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <caret line="24" column="58" lean-forward="false" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PortfolioWebsite/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/dlgin/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="129" column="46" lean-forward="false" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
+        <state relative-caret-position="54">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dlgin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state relative-caret-position="-1013">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PortfolioWebsite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
