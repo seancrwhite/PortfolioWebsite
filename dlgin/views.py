@@ -2,7 +2,9 @@ from django.shortcuts import render
 from dlgin.forms import UploadForm
 from django.forms.formsets import formset_factory
 from django.conf import settings
-from librosa import feature, load, logamplitude
+import librosa
+from librosa import feature, logamplitude
+from scipy.misc import imsave
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import requests
@@ -23,10 +25,13 @@ def index(request):
 
             labels, values = calc_genres(bytestring)
 
-            print(labels, values)
+            render_graphic(labels, values)
 
     else:
         upload_formset = UploadFormSet()
+        img = np.zeros([100, 100, 3], dtype=np.uint8)
+        img.fill(255)
+        imsave(settings.BASE_DIR + '/dlgin/static/img/figure.png', img)
 
     return render(request, 'dlgin/index.html', {
         'upload_formset': upload_formset
@@ -51,7 +56,7 @@ def calc_genres(bytestring):
         labels.append(key)
         values.append(float(value))
 
-    return labels, values
+    return labels, np.array(values)
 
 
 def calc_melgrams(request):
@@ -61,14 +66,13 @@ def calc_melgrams(request):
         file_path = '{}/songs/{}'.format(settings.MEDIA_ROOT, request.FILES[filename].name)
 
         print("Calculating", request.FILES[filename].name)
-        X, sr = load(file_path)
+        X, sr = librosa.load(file_path)
         melgram = logamplitude(feature.melspectrogram(y=X, sr=sr))
 
         slice_melgram = np.append(slice_melgram, melgram, axis=1)
 
         os.remove(file_path)  # delete song after done calculating
 
-    print("")
     bytestring = slice_melgram.astype(np.float32).tobytes()
 
     return bytestring
@@ -77,3 +81,42 @@ def calc_melgrams(request):
 def save_files(upload_formset):
     for form in upload_formset:
         form.save()
+
+
+def render_graphic(labels, values):
+    fig = plt.figure()
+    plt.gcf().subplots_adjust(bottom=0.30)  # make room for labels
+    colors = ['#e6194b', '#3cb44b', '#ffe119', '#0082c8', '#f58231', '#911eb4', '#46f0f0', '#f032e6',
+              '#d2f53c', '#008080', '#e6beff', '#aa6e28', '#800000', '#aaffc3', '#000080', '#ffd8b1']
+
+    if values.ndim == 1:  # if only one slice to display
+        ypos = np.arange(len(labels))
+
+        plt.bar(ypos, values, align='edge', color=colors)
+
+        plt.xticks(ypos, labels, rotation=70)
+        plt.xlabel('Genre')
+
+    else:
+        ax = Axes3D(fig)
+
+        lx = len(values[0])
+        ly = len(values[:, 0])
+
+        xpos = np.arange(0, lx, 1)
+        ypos = np.arange(0, ly, 1)
+        xpos, ypos = np.meshgrid(xpos + 0.25, ypos + 0.25)
+
+        xpos = xpos.flatten()
+        ypos = ypos.flatten()
+        zpos = np.zeros(lx * ly)
+
+        dx = 0.5 * np.ones_like(zpos)
+        dy = dx.copy()
+        dz = values.flatten()
+
+        ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=colors)
+        ax.w_xaxis.set_ticklabels(labels)
+        ax.set_xlabel('Genre')
+
+    plt.savefig(settings.BASE_DIR + '/dlgin/static/img/figure.png')

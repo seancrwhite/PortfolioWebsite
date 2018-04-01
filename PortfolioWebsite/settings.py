@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'numpy',
     'dynamic_formsets',
     'jquery',
+    'PIL',
 ]
 
 MIDDLEWARE = [
